@@ -70,7 +70,7 @@ if (ScrollTrigger.isTouch !== 1) {
         scrollTrigger: {
           trigger: item,
           start: "-1500",
-          end: "-150",
+          end: "-500",
           scrub: true,
         },
       }
@@ -86,7 +86,7 @@ if (ScrollTrigger.isTouch !== 1) {
         opacity: 0,
         scrollTrigger: {
           trigger: item,
-          start: "-50",
+          start: "-400",
           end: "650",
           scrub: true,
         },
