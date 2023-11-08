@@ -34,7 +34,24 @@ if (ScrollTrigger.isTouch !== 1) {
         scrollTrigger: {
           trigger: item,
           start: "-850",
-          end: "-100",
+          end: "-150",
+          scrub: true,
+        },
+      }
+    );
+  });
+
+  itemsL.forEach((item) => {
+    gsap.fromTo(
+      item,
+      { x: 0, opacity: 1 },
+      {
+        x: -50,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: item,
+          start: "-50",
+          end: "650",
           scrub: true,
         },
       }
@@ -52,8 +69,25 @@ if (ScrollTrigger.isTouch !== 1) {
         opacity: 1,
         scrollTrigger: {
           trigger: item,
-          start: "-850",
-          end: "-100",
+          start: "-1500",
+          end: "-150",
+          scrub: true,
+        },
+      }
+    );
+  });
+
+  itemsR.forEach((item) => {
+    gsap.fromTo(
+      item,
+      { x: 0, opacity: 1 },
+      {
+        x: 50,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: item,
+          start: "-50",
+          end: "650",
           scrub: true,
         },
       }
